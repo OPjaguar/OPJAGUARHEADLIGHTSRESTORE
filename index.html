@@ -143,6 +143,9 @@ body{font-family:var(--sans);background:#070d18;color:var(--text);line-height:1.
 .guarantee strong{display:block;font-size:14.5px;font-weight:700;margin-bottom:2px;color:#fff}
 .guarantee span{font-size:13px;color:var(--muted)}
 
+.zone-heading{font-size:1.5rem;font-weight:800;color:#fff;text-align:center;margin-bottom:.3rem;letter-spacing:-.3px;line-height:1.15}
+.zone-heading .days{display:block;font-size:1rem;font-weight:600;color:var(--gold);margin-top:6px;letter-spacing:.3px}
+.zone-subnote{text-align:center;font-size:12.5px;color:var(--muted);margin-bottom:1.3rem}
 .zone-content{display:none}
 .zone-content.active{display:block}
 
@@ -172,6 +175,8 @@ body{font-family:var(--sans);background:#070d18;color:var(--text);line-height:1.
   .zone-content > .section{max-width:960px;margin:0 auto}
   /* pricing side by side */
   .pricing-cards{grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .zone-heading{font-size:2rem}
+  .zone-heading .days{font-size:1.2rem}
   /* center the lower content sections */
   .section{max-width:960px;margin-left:auto;margin-right:auto}
   .how-steps{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}
@@ -231,10 +236,10 @@ body{font-family:var(--sans);background:#070d18;color:var(--text);line-height:1.
 </nav>
 
 <div id="gc-content" class="zone-content active">
-  <section class="section"><h2 class="section-title">Book your spot — Gold Coast (Mon-Thu)</h2><div class="pricing-cards" id="gc-cards"></div></section>
+  <section class="section"><h2 class="zone-heading">Book your spot<span class="days">Gold Coast &middot; Monday&ndash;Thursday</span></h2><p class="zone-subnote">We come to your home or work anywhere on the Gold Coast</p><div class="pricing-cards" id="gc-cards"></div></section>
 </div>
 <div id="bne-content" class="zone-content">
-  <section class="section"><h2 class="section-title">Book your spot — Brisbane (Fri-Sun)</h2><div class="pricing-cards" id="bne-cards"></div></section>
+  <section class="section"><h2 class="zone-heading">Book your spot<span class="days">Brisbane &middot; Friday&ndash;Sunday</span></h2><p class="zone-subnote">We come to your home or work anywhere in Brisbane</p><div class="pricing-cards" id="bne-cards"></div></section>
 </div>
 
 <section class="section">
