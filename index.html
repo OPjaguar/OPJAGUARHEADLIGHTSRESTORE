@@ -42,6 +42,30 @@
   [data-hub-card] .opj-arrow{transition:transform .4s cubic-bezier(.16,.8,.3,1)}
   [data-hub-card]:hover .opj-cardimg{transform:scale(1.08)}
   [data-hub-card]:hover .opj-arrow{transform:translateX(6px)}
+
+  /* ===== Mobile optimization ===== */
+  @media (max-width:900px){
+    header > div{flex-wrap:wrap!important;row-gap:10px!important;padding:10px 16px!important}
+    header > div > button{order:1}
+    header > div > a{order:2;padding:8px 14px!important;font-size:9.5px!important}
+    [data-bar-nav]{order:3;width:100%;justify-content:center;gap:6px!important}
+    [data-bar-nav] button{padding:7px 10px!important;font-size:9.5px!important}
+    [data-bar-jag]{width:26px!important}
+    [data-bar-word]{height:19px!important}
+
+    [style*="grid-template-columns: 1.02fr 0.98fr"]{grid-template-columns:1fr!important;gap:32px!important}
+    [style*="grid-template-columns: 1fr 1fr"]{grid-template-columns:1fr!important;gap:16px!important}
+    [style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:repeat(2,1fr)!important;gap:14px!important}
+    [style*="grid-template-columns: repeat(3, 1fr)"]{grid-template-columns:1fr!important;gap:14px!important}
+
+    main[style*="padding: 96px 24px 60px"]{padding:126px 16px 48px!important}
+    section[style*="min-height: 96vh"]{min-height:82vh!important}
+    section[style*="padding: 110px 26px 60px"]{padding:132px 20px 50px!important}
+    [style*="padding: 0px 44px; max-width: 560px"]{padding:0 22px!important;max-width:90%!important}
+  }
+  @media (max-width:560px){
+    [style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:1fr!important}
+  }
 </style>
 </helmet>
 <div ref="{{ rootRef }}" style="position:relative">
